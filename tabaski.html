@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabaski Mubarak</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cream': '#F4E4C1',
+                        'dark-teal': '#2C3E50',
+                        'light-cream': '#F9F2E7',
+                        'warm-beige': '#E8D5B7'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Amiri:wght@400;700&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; }
+        .arabic-font { font-family: 'Amiri', serif; }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
+        }
+        
+        .text-gradient {
+            background: linear-gradient(135deg, #F4E4C1, #E8D5B7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-shadow {
+            box-shadow: 0 8px 32px rgba(244, 228, 193, 0.3);
+        }
+        
+        .hover-lift {
+            transition: all 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(244, 228, 193, 0.4);
+        }
+        
+        .mosque-icon {
+            background: #2C3E50;
+            border-radius: 24px;
+            padding: 16px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="bg-light-cream">
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
+        <!-- Subtle pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, #F4E4C1 2px, transparent 0); background-size: 60px 60px;"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+            <!-- Logo Mosquée -->
+                <div class="mb-12">
+                   <img src="favicon.png" alt="Logo" class="w-24 h-24 mx-auto mb-8 rounded-2xl object-contain">
+                </div>
+            
+            <!-- Salutation en arabe -->
+            <h1 class="arabic-font text-4xl md:text-6xl font-bold text-cream mb-6">
+                عيد أضحى مبارك
+            </h1>
+            
+            <!-- Titre principal -->
+            <h2 class="text-5xl md:text-7xl font-bold text-white mb-4">
+                Tabaski
+            </h2>
+            <h3 class="text-3xl md:text-5xl font-light text-gradient mb-8">
+                Mubarak
+            </h3>
+            
+            <!-- Message -->
+            <p class="text-xl md:text-2xl text-cream/90 font-light max-w-3xl mx-auto leading-relaxed mb-12">
+                Que cette fête bénie apporte paix, prospérité et bonheur à tous vos foyers
+            </p>
+            
+            <!-- Ornement décoratif -->
+            <div class="flex justify-center items-center space-x-3 mb-8">
+                <div class="w-3 h-3 bg-cream rounded-full"></div>
+                <div class="w-8 h-1 bg-cream/60 rounded-full"></div>
+                <div class="w-4 h-4 bg-warm-beige rounded-full"></div>
+                <div class="w-8 h-1 bg-cream/60 rounded-full"></div>
+                <div class="w-3 h-3 bg-cream rounded-full"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section Vœux -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <!-- En-tête -->
+            <div class="text-center mb-16">
+                <h3 class="text-4xl md:text-5xl font-bold text-dark-teal mb-6">
+                    Nos Meilleurs <span class="text-warm-beige">Vœux</span>
+                </h3>
+                <div class="w-24 h-1 bg-warm-beige mx-auto rounded-full mb-8"></div>
+                <p class="text-xl text-dark-teal/80 max-w-3xl mx-auto leading-relaxed">
+                    En cette journée sacrée de Tabaski, nous vous présentons nos vœux les plus sincères 
+                    pour une fête remplie de bénédictions et de joie partagée.
+                </p>
+            </div>
+            
+            <!-- Cartes de vœux -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl card-shadow hover-lift border border-warm-beige/20">
+                    <div class="w-16 h-16 bg-cream rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-dark-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold text-dark-teal mb-4 text-center">Paix & Amour</h4>
+                    <p class="text-dark-teal/70 leading-relaxed text-center">
+                        Que la paix d'Allah règne dans vos cœurs et que l'amour familial illumine vos journées.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl card-shadow hover-lift border border-warm-beige/20">
+                    <div class="w-16 h-16 bg-warm-beige rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-dark-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold text-dark-teal mb-4 text-center">Unité & Fraternité</h4>
+                    <p class="text-dark-teal/70 leading-relaxed text-center">
+                        Que cette fête renforce les liens familiaux et communautaires qui nous unissent.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-3xl card-shadow hover-lift border border-warm-beige/20">
+                    <div class="w-16 h-16 bg-cream rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-dark-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-2xl font-semibold text-dark-teal mb-4 text-center">Prospérité & Succès</h4>
+                    <p class="text-dark-teal/70 leading-relaxed text-center">
+                        Que vos projets fleurissent et que la baraka accompagne tous vos efforts.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section Citation -->
+    <section class="bg-cream py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="mosque-icon w-16 h-16 mx-auto mb-8">
+                <svg class="w-8 h-8 text-cream" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z"/>
+                </svg>
+            </div>
+            
+            <blockquote class="text-2xl md:text-3xl font-medium text-dark-teal italic leading-relaxed mb-8">
+                "Le véritable sacrifice réside dans le don de soi pour le bien-être d'autrui"
+            </blockquote>
+            
+            <div class="flex justify-center items-center space-x-2">
+                <div class="w-2 h-2 bg-warm-beige rounded-full"></div>
+                <div class="w-8 h-1 bg-dark-teal/30 rounded-full"></div>
+                <div class="w-2 h-2 bg-warm-beige rounded-full"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section Traditions -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h3 class="text-4xl md:text-5xl font-bold text-dark-teal mb-6">
+                    Les <span class="text-warm-beige">Traditions</span> de la Tabaski
+                </h3>
+                <div class="w-24 h-1 bg-warm-beige mx-auto rounded-full mb-8"></div>
+                <p class="text-xl text-dark-teal/80 max-w-3xl mx-auto">
+                    Découvrez les moments sacrés qui rythment cette fête de partage et de solidarité
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:bg-cream transition-colors duration-300 border border-warm-beige/20">
+                        <svg class="w-10 h-10 text-dark-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-dark-teal mb-3">Prière de l'Aïd</h4>
+                    <p class="text-dark-teal/70">Rassemblement communautaire pour la prière festive</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:bg-cream transition-colors duration-300 border border-warm-beige/20">
+                        <svg class="w-10 h-10 text-dark-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-dark-teal mb-3">Le Sacrifice</h4>
+                    <p class="text-dark-teal/70">Commémoration du sacrifice d'Ibrahim</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:bg-cream transition-colors duration-300 border border-warm-beige/20">
+                        <svg class="w-10 h-10 text-dark-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-dark-teal mb-3">Le Partage</h4>
+                    <p class="text-dark-teal/70">Distribution aux plus démunis</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:bg-cream transition-colors duration-300 border border-warm-beige/20">
+                        <svg class="w-10 h-10 text-dark-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold text-dark-teal mb-3">Les Visites</h4>
+                    <p class="text-dark-teal/70">Moments de retrouvailles familiales</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-dark-teal py-12 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+           
+            <h4 class="text-2xl font-semibold text-cream mb-4">
+                Tabaski Mubarak à tous
+            </h4>
+            <p class="text-cream/80 leading-relaxed max-w-2xl mx-auto">
+                Que cette fête bénie vous apporte santé, bonheur et prospérité. 
+                Que la paix d'Allah soit avec vous et vos familles.
+            </p>
+            
+            <div class="flex justify-center items-center space-x-3 mt-8">
+                <div class="w-2 h-2 bg-cream rounded-full"></div>
+                <div class="w-8 h-1 bg-cream/50 rounded-full"></div>
+                <div class="w-3 h-3 bg-warm-beige rounded-full"></div>
+                <div class="w-8 h-1 bg-cream/50 rounded-full"></div>
+                <div class="w-2 h-2 bg-cream rounded-full"></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
